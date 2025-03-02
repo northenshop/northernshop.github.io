@@ -1,0 +1,180 @@
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    --background: rgb(0, 0, 0);
+ 
+    --primary: #ff1ead;
+    --secondary: #1effc3;
+    
+    --card-size: 300px;
+ }
+ 
+ body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 1%;
+    background: var(--background);
+    font-family: 'Source Code Pro', monospace;
+    
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ .card { 
+    width: calc(var(--card-size) * 1.586);
+    height: var(--card-size);
+    
+    border-radius: 0.75rem;
+    box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    
+    background: black;
+    
+    display: grid;
+    grid-template-columns: 40% auto;
+    color: white;
+    
+    align-items: center;
+    
+    will-change: transform;
+    transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+    &:hover {
+       transform: scale(1.1);
+       box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+ }
+ 
+ .card-details {
+    padding: 10%;
+ }
+ 
+ .name {
+    font-size: 75%;
+ }
+ 
+ .occupation {
+    font-weight: 6%;
+    color: var(--primary);
+ }
+ 
+ .card-avatar {
+    display: grid;
+    place-items: center;
+ }
+ 
+ svg {
+    fill: white;
+    width: 65%;
+ }
+ 
+ .card-about {
+    margin-top: 1%;
+    display: grid;
+    grid-auto-flow: column;
+ }
+ 
+ .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5%;
+    
+    .value {
+       font-size: 1%;
+    }
+    
+    .label {
+       margin-top: 0.15%;
+       font-size: 0.75%;
+       font-weight: 6%;
+       color: var(--primary);
+    }
+ }
+ 
+ .skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75%;
+    
+    .label {
+       font-size: 1%;
+       font-weight: 6%;
+       color: var(--primary);
+    }
+    
+    .value {
+       margin-top: 15%;
+       font-size: 75%;
+       line-height: 125%;
+    }
+    a {
+        color: #ff1ead; 
+    }
+    a:hover {
+        color: #ff1ead;
+        }
+
+        a:visited {
+        color: #ff1ead;
+        }
+
+        a:active {
+        color: #ff1ead;
+}
+ }
+</style> <!-- https://github.com/northenshop/treeTimer.github.io/blob/main/cub2.0000.png?raw=true -->
+<body>
+   
+<div class="card">
+   <div class="card-avatar">
+
+ <img src="https://github.com/northenshop/treeTimer.github.io/blob/main/cub2.0000.png?raw=true" height="250" width="250">
+
+   </div>
+   <div class="card-details">
+      <div class="name">cub8t</div>
+      <div class="occupation">Musician</div>
+      
+      <!-- <div class="card-about">
+         <div class="item">
+            <span class="value">25</span>
+            <span class="label">Age</span>
+         </div>
+         <div class="item">
+            <span class="value">70 kg </span>
+            <span class="label">Weight</span>
+         </div>
+         <div class="item">
+            <span class="value">175 cm</span>
+            <span class="label">Height</span>
+         </div>
+      </div> -->
+      <div class="skills">
+        <span class="value">
+            
+            cub8t (aka NORTHERN VOID), a composer and musician who creates his own music and writes custom music for sale in any genres. <br> Contacts: <br><br>
+            <br>
+            <a href="https://youtube.com/@NORTHERNVOID1337" target="_blank" class="skills" class="value" class="occupation"> YouTube </a>
+            <a href="https://x.com/northern_v0id_" target="_blank" class="skills" class="value" class="occupation"> X (Twitter)</a>
+            <a href="https://t.me/n0rthernv0id" target="_blank" class="skills" class="value" class="occupation"> Telegram</a>
+            <a onclick="showDisc()" class="skills" class="value" class="occupation"> Discord </a>
+            <a onclick="showMail()" class="skills" class="value" class="occupation"> Email </a>
+        </span>
+      </div>
+   </div>
+</div>
+</body>
+<script>
+    function showMail() {
+        alert("gmail: vasilisa36zv@gmail.com");
+    }
+    function showDisc() {
+        alert("discord: @molchun_at")
+    }
+</script>
